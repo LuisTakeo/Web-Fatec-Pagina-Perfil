@@ -1,0 +1,141 @@
+:root
+{
+    --primary-color: #006eff;
+    --secondary-color: #4eaafa;
+    --success-color: #28a745;
+    --danger-color: #dc3545;
+    --warning-color: #ffc107;
+    --info-color: #17a2b8;
+    --light-color: #f8f9fa;
+    --dark-color: #343a40;
+    --white-color: #fff;
+    --black-color: #2c2c2c;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+li
+{
+    list-style: none;
+}
+
+a
+{
+    text-decoration: none;
+    color: var(--black-color);
+    font-weight: bold;
+}
+
+a:hover
+{
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.header
+{
+    /* display: flex; */
+    /* justify-content: space-between; */
+    align-items: center;
+    padding: 20px 50px;
+    margin: 10px;
+    background-color: var(--light-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    font-size: 16px;
+}
+
+.header__title
+{
+    font-size: 3em;
+    color: var(--primary-color)
+}
+
+.header__text
+{
+    font-size: 1.5em;
+    color: var(--secondary-color);
+}
+
+.container
+{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    min-height: 90vh;
+    margin: 10px;
+}
+
+.aside
+{
+    width: 20%;
+    height: 100%;
+    min-height: 90vh;
+    background-color: var(--light-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+}
+
+.main
+{
+    flex: 1;
+    margin: 0 10px;
+    padding: 20px;
+    background-color: var(--light-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+.main__about
+{
+    /* padding: 10px; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: var(--light-color);
+    width: 100%;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); */
+}
+
+.main__about__title
+{
+    font-size: 2em;
+    color: var(--black-color);
+}
+
+.main__about__text
+{
+    font-size: 1.125em;
+    color: var(--dark-color);
+}
+
+.main__projects
+{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+    padding: 20px 0 0;
+    /* justify-content: space-between; */
+    background-color: var(--light-color);
+    border-top: 1px solid var(--dark-color);
+}
+
+.footer
+{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center ;
+    padding: 20px;
+    margin: 10px;
+    background-color: var(--light-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    font-size: 16px;
+}
